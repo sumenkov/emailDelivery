@@ -19,7 +19,7 @@ else:
     
 
 def main():
-    subject = cfg.get("emails", "subject") + " " + str(datetime.today().strftime('%d.%m.%Y'))
+    subject = cfg.get("emails", "subject")
     emails = cfg.get("emails", "to")
     body_text = ""
     document = Document('./report.docx')
